@@ -43,4 +43,24 @@ public class FindMaxTest {
     void ifFloatNumberThreeIsMaxReturnTrue() {
         Assertions.assertEquals(10.0, findMax.findFloatMaxNumber(2.5F, 5.0F, 10.0F));
     }
+    /**
+     * Similarly as above i have written test cases
+     * created three test cases which will check and give the test case result.
+     * Here i have taken String as values.
+     */
+
+    @Test
+    void ifStringNumberOneIsMaxReturnTrue() {
+        Assertions.assertEquals("peach", findMax.findMaxString("banana", "peach", "apple"));
+    }
+
+    @Test
+    void ifStringNumberTwoIsMaxReturnTrue() {
+        Assertions.assertEquals("peach", findMax.findMaxString("apple", "banana", "peach"));
+    }
+
+    @Test
+    void ifStringNumberThreeIsMaxReturnTrue() {
+        Assertions.assertEquals("peach", findMax.findMaxString("peach", "apple", "banana"));
+    }
 }

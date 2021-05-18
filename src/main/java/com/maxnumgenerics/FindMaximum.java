@@ -39,5 +39,22 @@ public class FindMaximum {
         }
         return maxNumber;
     }
+    /**
+     * As above it'll work the same but having only String values.
+     * @param numberOne
+     * @param numberTwo
+     * @param numberThree
+     * @return
+     */
 
+    public String findMaxString(String numberOne, String numberTwo, String numberThree) {
+        String maxString = numberOne;
+        if (numberTwo.compareTo(maxString) > 0) {
+            maxString = numberTwo;
+        }
+        if (numberThree.compareTo(maxString) > 0) {
+            maxString = numberThree;
+        }
+        return maxString;
+    }
 }
