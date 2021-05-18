@@ -21,4 +21,23 @@ public class FindMaximum {
         return maxNumber;
     }
 
+    /**
+     * As above it'll work the same but having only float values.
+     * @param numberOne
+     * @param numberTwo
+     * @param numberThree
+     * @return
+     */
+
+    public float findFloatMaxNumber(Float numberOne, Float numberTwo, Float numberThree) {
+        Float maxNumber = numberOne;
+        if (numberTwo.compareTo(maxNumber) > 0) {
+            maxNumber = numberTwo;
+        }
+        if (numberThree.compareTo(maxNumber) > 0) {
+            maxNumber = numberThree;
+        }
+        return maxNumber;
+    }
+
 }
